@@ -1,0 +1,6 @@
+reset;
+option solver cplex;
+model 'D:/Documents/SimplexSolveur/Agriculture/Ariculture.mod';
+solve;
+display z;
+display x1,x2;

@@ -1,0 +1,13 @@
+reset;
+option solver cplex;
+model 'D:/Documents/SimplexSolveur/taxi/taxi.mod';
+data 'D:/Documents/SimplexSolveur/taxi/taxi.dat';
+solve;
+option display_1col 0;
+display taxi;
+display cout;
+expand taxi;
+display x;
+
+
+	

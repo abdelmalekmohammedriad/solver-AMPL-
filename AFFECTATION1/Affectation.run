@@ -1,0 +1,13 @@
+reset;
+option solver cplex;
+model 'D:/Documents/SimplexSolveur/AFFECTATION1/Affectation.mod';
+data 'D:/Documents/SimplexSolveur/AFFECTATION1/Affectation.dat';
+solve;
+option display_1col 0;
+display Production;
+display p;
+expand Production;
+display x;
+
+
+	
